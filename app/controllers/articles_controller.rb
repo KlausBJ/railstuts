@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
 	include ArticlesHelper
+	
 	def create
 		@article = Article.new(article_params)
 		@article.save
